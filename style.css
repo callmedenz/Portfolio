@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #0b0f14;
+  color: #e6e6e6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #0f1621;
+}
+
+nav h2 {
+  color: #3cff7f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav li {
+  cursor: pointer;
+  color: #bdbdbd;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+.role {
+  color: #3cff7f;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 400px;
+  color: #cfcfcf;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  background: #111827;
+  padding: 20px 16px;   /* ↓ reduced padding */
+  border-radius: 12px;
+  text-align: center;
+  width: 160px;         /* optional: control width */
+  min-height: 120px;    /* ↓ reduced height */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.stat h3 {
+  color: #3cff7f;
+  font-size: 1.5rem;
+}
+
+/* Sections */
+.section {
+  padding: 80px 60px;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card span {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* Achievements */
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 12px;
+  color: #cfcfcf;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
